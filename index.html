@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verifica tu quiniela aqui</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="video-background">
+<video autoplay muted loop playsinline id="background-video">
+<source src="messi.mp4" type="video/mp4">
+</video>
+</div>
+<div class="overlay"></div>
+<div class="container">
+<h1 class="fade-in">🏆 Bienvenido ⚽</h1>
+<div class="button-container fade-in">
+<button id="participanteBtn">Participante ✅</button>
+<button id="vendedorBtn">Vendedor ✅</button>
+<button id="pdfBtn">listas 📸</button>
+</div>
+<div id="results-container">
+</div>
+<div id="pdf-viewer-container" style="display: none;">
+<canvas id="pdf-canvas"></canvas>
+<div class="pdf-navigation">
+<button id="prev-page">Anterior</button>
+<span>Página <span id="page-num"></span> de <span id="page-count"></span></span>
+<button id="next-page">Siguiente</button>
+</div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
